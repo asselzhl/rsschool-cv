@@ -30,7 +30,7 @@
         <div class="container">
             <section class="profile-section">
                 <div class="profile_image">
-                <img src="/avatar.jpg" alt="avatar" height="530" width="508">
+                <img src="/assets/images/avatar.jpg" alt="avatar" height="530" width="508">
                 </div>
                 <div class="profile_body">
                 <h1 class="page_title">Assel Zholaushybay</h1>
@@ -39,6 +39,22 @@
                 <div class="page_rectangle"></div>
                 <p class="profile_text">It’s been only 3 month since I’ve started learning Web development by myself. Despite such a short time, I have a good command of HTML and CSS. Moreover, recently I’ve started exploring JavaScript and I’m already familiar with the basic concepts of this language as well as solving simple tasks.</p>
                 </div>   
+            </section>
+            <section class="contacts">
+                <ul class="contacts_list">
+                    <li class="contact_item">
+                        <p>Phone Number</p>
+                        <p>+7 777 6827272</p>
+                    </li>
+                    <li class="contact_item">
+                        <p>Email</p>
+                        <p><a href="mailto:asselzhly@gmail.com">asselzhly@gmail.com</a></p>
+                    </li>
+                    <li class="contact_item">
+                        <p>Location</p>
+                        <p>Almaty, Kazakhstan</p>
+                    </li>
+                </ul>
             </section>
             <section class="content-section">
                 <div class="left_column">
@@ -84,16 +100,26 @@
                     <div class="page_rectangle"></div>
                     <div class="code_example">
                     <code>
-                        const check = (a, x) => {
-                            let i = 0;
-                            while (i < a.length) {
-                              if (a[i] == x) {
-                                return true;
-                              }
-                              i = i + 1;
-                            }
-                            return false;
-                          }
+function add(num1, num2) {
+    let splitted1 = num1.toString().split('').reverse();
+    let splitted2 = num2.toString().split('').reverse();
+    let n = Math.abs(splitted1.length - splitted2.length); 
+    if (splitted1.length < splitted2.length) {
+        for (var i = 0; i < n; i++) {
+          splitted1.push('0');
+        } 
+    } else if (splitted1.length > splitted2.length) {
+        for (var i = 0; i < n; i++) {
+            splitted2.push('0');
+        } 
+    }
+    let sumArray = [];
+    for (let i = 0; i < splitted1.length; i++) {
+        let sum = +splitted1[i] + +splitted2[i];
+        sumArray.push(sum);
+    }
+    return +sumArray.reverse().join("");
+}
                     </code>
                     </div>
                     <h2 class="section_title white">LANGUAGES</h2>
@@ -108,7 +134,17 @@
     </main>
     <footer class="footer">
         <div class="container">
-            
+            <ul class="footer_list">
+                <li>
+                    <a class="footer_link_github" href="https://github.com/asselzhl"><img src="/assets/icons/icons8-github.svg" alt="github icon" width="50" height="50"></a>
+                </li>
+                <li>
+                    2022
+                </li>
+                <li>
+                    <a class="footer_link_rsschool" href="https://rs.school/js/"><img src="/assets/icons/rs_school_js.svg" alt="rsschool icon" width="100" height="100"></a>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>
