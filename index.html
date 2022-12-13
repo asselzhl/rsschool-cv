@@ -15,20 +15,21 @@
         <div class="container">
             <nav class="menu">
                 <ul class="menu_list">
-                    <li class="menu_item"><a class="menu_link" href="">Contact information</a></li>
-                    <li class="menu_item"><a class="menu_link" href="">About me</a></li>
-                    <li class="menu_item"><a class="menu_link" href="">Skills</a></li>
-                    <li class="menu_item"><a class="menu_link" href="">Code Example</a></li>
-                    <li class="menu_item"><a class="menu_link" href="">Experience</a></li>
-                    <li class="menu_item"><a class="menu_link" href="">Education</a></li>
-                    <li class="menu_item"><a class="menu_link" href="">Languages</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#contacts">Contact information</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#profile">Profile</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#skills">Skills</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#code_example">Code Example</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#experience">Experience</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#education">Education</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#languages">Languages</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="page">
-        <div class="container">
-            <section class="profile-section">
+            <section class="profile-section" id="profile">
+                <div class="container">
+                    <div class="profile_container">
                 <div class="profile_image">
                 <img src="/assets/images/avatar.jpg" alt="avatar" height="530" width="508">
                 </div>
@@ -38,9 +39,12 @@
                 <h2 class="section_title black">PROFILE</h2>
                 <div class="page_rectangle"></div>
                 <p class="profile_text">It’s been only 3 month since I’ve started learning Web development by myself. Despite such a short time, I have a good command of HTML and CSS. Moreover, recently I’ve started exploring JavaScript and I’m already familiar with the basic concepts of this language as well as solving simple tasks.</p>
+                </div>
+                </div>
                 </div>   
             </section>
-            <section class="contacts">
+            <section class="contacts" id="contacts">
+                <div class="container">
                 <ul class="contacts_list">
                     <li class="contact_item">
                         <p>Phone Number</p>
@@ -55,11 +59,16 @@
                         <p>Almaty, Kazakhstan</p>
                     </li>
                 </ul>
+                </div>
             </section>
             <section class="content-section">
+                <div class="left_column_bg"></div>
+                <div class="right_column_bg"></div>
+                <div class="container">
+                    <div class="content_container">
                 <div class="left_column">
                     <div class="left_column_inside">
-                    <h2 class="section_title white">EDUCATION</h2>
+                    <h2 class="section_title white" id="education">EDUCATION</h2>
                     <div class="page_rectangle"></div>
                     <h3 class="section_subtitle">FOREIGN PHILOLOGY</h3>
                     <p class="section_text">Kazakh National University, 2016-2020</p>
@@ -67,7 +76,7 @@
                     <div class="page_rectangle"></div>
                     <p class="section_text">JavaScript Manual on learnjavascript.ru (in progress)</p>
                     <p class="section_text">RS School. JS/Frontend-development. Stage 0 (in progress)</p>
-                    <h2 class="section_title white">SKILLS</h2>
+                    <h2 class="section_title white" id="skills">SKILLS</h2>
                     <div class="page_rectangle"></div>
                     <h3 class="section_subtitle">HTML5</h3>
                     <div class="skills_container">
@@ -93,10 +102,10 @@
                 </div>
                 <div class="right_column">
                     <div class="right_column_inside">
-                    <h2 class="section_title white">WORK EXPERIENCE</h2>
+                    <h2 class="section_title white" id="experience">WORK EXPERIENCE</h2>
                     <div class="page_rectangle"></div>
                     <p class="section_text">No experience in Web Development</p>
-                    <h2 class="section_title white">CODE EXAMPLE</h2>
+                    <h2 class="section_title white" id="code_example">CODE EXAMPLE</h2>
                     <div class="page_rectangle"></div>
                     <div class="code_example">
                     <code>
@@ -122,15 +131,17 @@ function add(num1, num2) {
 }
                     </code>
                     </div>
-                    <h2 class="section_title white">LANGUAGES</h2>
+                    <h2 class="section_title white" id="languages">LANGUAGES</h2>
                     <div class="page_rectangle"></div>
                     <p class="section_text">Kazakh - native</p>
                     <p class="section_text">Russian - advanced</p>
                     <p class="section_text">English - advanced</p>
                 </div>
             </div>
+                </div>
+            </div>
             </section>
-        </div>
+        
     </main>
     <footer class="footer">
         <div class="container">

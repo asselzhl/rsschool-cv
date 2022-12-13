@@ -24,6 +24,7 @@ ul,
     max-width: 1440px;
     margin: 0 auto;
     box-sizing: content-box;
+    
   }
 .header {
     display: flex;
@@ -53,16 +54,18 @@ ul,
     color: #FFFFFF;
     transition: .3s;
 }
-.profile-section {
+.profile-section img {
+    display: block;
+    
+}
+.profile_body {
+    max-width: 556px;
+    margin: 50px 0px 0px 123px;
+}
+.profile_container {
     display: flex;
     justify-content: center;
 }
-
-.profile_body {
-    max-width: 556px;
-    margin: 70px 0px 40px 123px;
-}
-
 .page_title {
     font-weight: 600;
     font-size: 60px;
@@ -100,15 +103,19 @@ ul,
     font-size: 20px;
     line-height: 120%;
 }
-.content-section {
+.content_container {
     display: flex;
     width: 100%;
     align-content: center;
     justify-content: center;
 }
+.content-section {
+    position: relative;
+}
 .left_column {
     background-color: #292935;
     min-width: 508px;
+    z-index: 2;
 }
 
 .section_subtitle {
@@ -159,6 +166,7 @@ ul,
 .right_column {
     background-color: #22222E;
     min-width: 680px;
+    z-index: 2;
 }
 code {
     font-size: 15px;
@@ -216,4 +224,23 @@ code {
 }
 .footer_list li:not(:last-child) {
     margin: 0px 150px 0px 0px;
+}
+.right_column_bg {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+    background-color: #22222E;
+    top: 0;
+    right: 0;
+}
+.left_column_bg {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    z-index: 0;
+    background-color: #292935;
+    
 }
