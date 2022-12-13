@@ -24,6 +24,7 @@ ul,
     max-width: 1440px;
     margin: 0 auto;
     box-sizing: content-box;
+    border: #000000 1px solid;
   }
 .header {
     display: flex;
@@ -55,12 +56,12 @@ ul,
 }
 .profile-section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .profile_body {
     max-width: 556px;
-    margin: 70px 0px 40px 0px;
+    margin: 70px 0px 40px 123px;
 }
 
 .page_title {
@@ -99,4 +100,87 @@ ul,
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
+}
+.content-section {
+    display: flex;
+    width: 100%;
+    
+    align-content: center;
+    justify-content: center;
+}
+.left_column {
+    background-color: #292935;
+    min-width: 508px;
+}
+
+.section_subtitle {
+    color: #FFFFFF;
+    font-weight: 600px;
+    font-size: 25px;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+.section_text {
+    color: #FFFFFF;
+    font-weight: 500px;
+    font-size: 24px;
+    line-height: 120%;
+    max-width: 400px;
+    margin: 15px 0px;
+}
+.skills_container {
+    max-width: 400px;
+    background-color: #5E5D6B;
+    margin-bottom: 20px;
+}
+.skills {
+    text-align: right;
+    padding-right: 20px;
+    color: #000000;
+}
+.html {
+    width: 90%;
+    background-color: #FFC905;
+}
+.css {
+    width: 90%;
+    background-color: #FFC905;
+}
+.js {
+    width: 60%;
+    background-color: #FFC905;
+}
+.git {
+    width: 80%;
+    background-color: #FFC905;
+}
+.figma {
+    width: 100%;
+    background-color: #FFC905;
+}
+.right_column {
+    background-color: #22222E;
+    min-width: 680px;
+}
+code {
+    font-size: 20px;
+}
+.code_example {
+    background-color: #FFC905;
+    max-width: 526px;
+    min-height: 300px;
+    border-radius: 5px;
+    
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre;
+}
+.white {
+    margin: 40px 0px 20px 0px;
+}
+.left_column_inside {
+    
+}
+.right_column_inside {
+    margin: 0px 0px 0px 123px;
 }
