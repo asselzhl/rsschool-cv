@@ -43,7 +43,7 @@
                 </div>
                 </div>   
             </section>
-            <section class="contacts" id="contacts">
+            <div class="contacts" id="contacts">
                 <div class="container">
                 <ul class="contacts_list">
                     <li class="contact_item">
@@ -60,7 +60,7 @@
                     </li>
                 </ul>
                 </div>
-            </section>
+            </div>
             <section class="content-section">
                 <div class="left_column_bg"></div>
                 <div class="right_column_bg"></div>
@@ -78,26 +78,33 @@
                     <p class="section_text">RS School. JS/Frontend-development. Stage 0 (in progress)</p>
                     <h2 class="section_title white" id="skills">SKILLS</h2>
                     <div class="page_rectangle"></div>
-                    <h3 class="section_subtitle">HTML5</h3>
+                    <ul>
+                    <li class="section_subtitle">HTML5
                     <div class="skills_container">
                         <div class="skills html">90%</div>
                     </div>
-                    <h3 class="section_subtitle">CSS3</h3>
-                    <div class="skills_container">
-                        <div class="skills css">90%</div>
-                    </div>
-                    <h3 class="section_subtitle">JavaScript</h3>
-                    <div class="skills_container">
-                        <div class="skills js">60%</div>
-                    </div>
-                    <h3 class="section_subtitle">Git, GitHub</h3>
-                    <div class="skills_container">
-                        <div class="skills git">80%</div>
-                    </div>
-                    <h3 class="section_subtitle">Figma</h3>
-                    <div class="skills_container">
-                        <div class="skills figma">100%</div>
-                    </div>
+                    </li>
+                    <li class="section_subtitle">CSS3
+                        <div class="skills_container">
+                            <div class="skills html">90%</div>
+                        </div>
+                        </li>
+                        <li class="section_subtitle">JavaScript
+                            <div class="skills_container">
+                                <div class="skills html">60%</div>
+                            </div>
+                            </li>
+                            <li class="section_subtitle">Git, GitHub
+                                <div class="skills_container">
+                                    <div class="skills html">80%</div>
+                                </div>
+                                </li>
+                                <li class="section_subtitle">Figma
+                                    <div class="skills_container">
+                                        <div class="skills html">100%</div>
+                                    </div>
+                                    </li>
+                    </ul>
                 </div>
                 </div>
                 <div class="right_column">
@@ -113,17 +120,17 @@ function add(num1, num2) {
     let splitted1 = num1.toString().split('').reverse();
     let splitted2 = num2.toString().split('').reverse();
     let n = Math.abs(splitted1.length - splitted2.length); 
-    if (splitted1.length < splitted2.length) {
-        for (var i = 0; i < n; i++) {
+    if (splitted1.length &lt; splitted2.length) {
+        for (var i = 0; i &lt; n; i++) {
           splitted1.push('0');
         } 
     } else if (splitted1.length > splitted2.length) {
-        for (var i = 0; i < n; i++) {
+        for (var i = 0; i &lt; n; i++) {
             splitted2.push('0');
         } 
     }
     let sumArray = [];
-    for (let i = 0; i < splitted1.length; i++) {
+    for (let i = 0; i &lt; splitted1.length; i++) {
         let sum = +splitted1[i] + +splitted2[i];
         sumArray.push(sum);
     }
@@ -133,9 +140,11 @@ function add(num1, num2) {
                     </div>
                     <h2 class="section_title white" id="languages">LANGUAGES</h2>
                     <div class="page_rectangle"></div>
-                    <p class="section_text">Kazakh - native</p>
-                    <p class="section_text">Russian - advanced</p>
-                    <p class="section_text">English - advanced</p>
+                    <ul>
+                    <li class="section_text">Kazakh - native</li>
+                    <li class="section_text">Russian - advanced</li>
+                    <li class="section_text">English - advanced</li>
+                    </ul>
                 </div>
             </div>
                 </div>
