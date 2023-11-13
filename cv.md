@@ -14,11 +14,12 @@ I understand that learning Web development is a lot of work, so I will achieve t
 3. Focus.
 
 ## Skills 
-* HTML5
-* CSS3
 * JavaScript 
-* Git, GitHub
-* VS Code
+* HTML
+* CSS
+* SASS
+* Bootstrap
+* Git
 ## Code Example 
 
 **Task:**
